@@ -1,7 +1,7 @@
-#MarkovifyTest
+# MarkovifyTest
 Simple markov testing program. Sotf of documented below, but more changes will come to make this structured and include a running section and such things.
 
-##Notes:
+## Notes:
 * Use pip install -r requirements.txt inside this dir to get all of those.
 * run.bat runs this. To generate another bit of text, press enter.
 * To go into the data folder and grab a file, use something like: ```"data/sc.txt"```
