@@ -1,5 +1,5 @@
 # MarkovifyTest
-Simple markov testing program. Sotf of documented below, but more changes will come to make this structured and include a running section and such things.
+Simple markov testing program. Stuff will be documented below, but more changes will come to make this structured and include a running section and such things.
 
 ## Notes:
 Use pip install -r requirements.txt inside this dir to get all of those.
