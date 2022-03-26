@@ -1,7 +1,14 @@
+"""
+MarkovifyTest
+Basic program to demonstrate using the Markovify Python library.
+Patrick Wilson / BrailleScreen.
+"""
+
 import markovify, sys, os, traceback
 data=""
 
-fn=sys.argv[1]
+fn=""
+if len(sys.argv)>1: fn=sys.argv[1]
 #If you don't enter a filename as the command line flag, we fall back to our older method of asking the user via Python's input.
 if fn=="": fn=input("Enter the file you want to search for.")
 if fn=="": sys.exit("ERROR blank field")
