@@ -6,12 +6,12 @@ fn=sys.argv[1]
 if fn=="": fn=input("Enter the file you want to search for.")
 if fn=="": sys.exit("ERROR blank field")
 if os.path.isfile( fn)==False:
-	print("Error! File "+fn+" doesn't exist.")
+	print(f"Error! File {fn}" + " doesn't exist.")
 	sys.exit()
 with open(fn) as f:
 	text=f.read()
 	f.close()
-for x in range(10):
+for _ in range(10):
 	text_model = markovify.Text(text)
 	try:
 		tempstring=text_model.make_sentence(tries=50)
@@ -20,8 +20,6 @@ for x in range(10):
 	if tempstring!=None: data+=tempstring+"\r\n"
 	print("Press return to generate more output.")
 	input()
-#Write to our saves file.
-f=open("savedStrings.txt", "a")
-f.write(data)
-f.close()
+with open("savedStrings.txt", "a") as f:
+	f.write(data)
 print(str(len(data))+" bytes of new text have been written to the saved strings file.")
