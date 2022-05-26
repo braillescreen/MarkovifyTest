@@ -1,3 +1,3 @@
 @echo off
-python main.py data/changelog.txt
+python main.py data/sc.txt
 pause
